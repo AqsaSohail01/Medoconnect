@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Medoconnect</string>
+    <string name="call" />
+    <string name="appointment" />
+    <string name="home" />
+    <string name="rec" />
+    <string name="profile" />
+</resources>

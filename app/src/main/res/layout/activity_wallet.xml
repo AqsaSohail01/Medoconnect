@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FEF5DE">
+
+        <Button
+            android:id="@+id/backArrowwallet"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="#FDF4DD"
+            android:drawableLeft="@drawable/back"
+            android:text="back " />
+
+        <TextView
+            android:id="@+id/verificationHeadingTextView"
+            android:layout_width="191dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@id/backArrowwallet"
+            android:gravity="center"
+            android:text="Wallet"
+            android:textAlignment="center"
+            android:textColor="#00BCD4"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:background="#FDF4DD"
+            android:padding="1dp"
+            android:src="@drawable/walletorange" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:background="#00BBD3"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:layout_marginTop="54dp"
+            android:text="Current Balance            Rs. 0 "
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+
+        android:text="Transaction History"
+        android:textColor="#078C9E"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="#DDF2FF"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:background="#DDF2FF"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="3dp"
+            android:background="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+
+            android:layout_marginTop="35dp"
+            android:background="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+
+            android:layout_marginTop="35dp"
+            android:background="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+
+            android:layout_marginTop="35dp"
+            android:background="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="35dp"
+            android:background="#000000" />
+
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="125dp"
+            app:itemIconTint="@null"
+            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+            app:menu="@menu/bottom_navigation_menu">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/layoutbd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginBottom="0dp"
+        android:background="#DDF2FF">
+
+        <Button
+            android:id="@+id/backArrowImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp"
+            android:contentDescription="Click Me"
+            android:backgroundTint="#DDF2FF"
+            android:drawableLeft="@drawable/back"
+
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/verificationHeadingTextView"
+            android:layout_width="191dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="-19dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@id/backArrowImageView"
+            android:gravity="center"
+            android:text="Verification"
+            android:textAlignment="center"
+            android:textColor="#00BCD4"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="511dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:background="#DFFBFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/alertTextView"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Alert!"
+            android:textAlignment="center"
+            android:textColor="#F7941D"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/otpTextView"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Verify OTP code"
+            android:textAlignment="center"
+            android:textColor="#F7941D"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phoneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="A code was sent to your phone number +923000000000 (Edit)"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/codeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Enter 4 Digit Code"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/otp4EditText"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/otp1EditText"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/otp3EditText"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/otp2EditText"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/verifyButton"
+            android:layout_width="152dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#F7941D"
+            android:gravity="center"
+            android:text="Verify" />
+
+        <TextView
+            android:id="@+id/remainingTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="00:30 seconds"
+            android:textColor="#F7941D" />
+
+        <Button
+            android:id="@+id/sendCodeAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#F7941D"
+            android:gravity="center"
+            android:text="Send Code Again" />
+
+        <Button
+            android:id="@+id/getCodeViaCallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="80dp"
+            android:backgroundTint="#F7941D"
+            android:text="Get Code via Call" />
+
+    </LinearLayout>
+
+</LinearLayout>

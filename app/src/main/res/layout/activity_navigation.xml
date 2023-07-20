@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/profilePicImageView"
+        android:layout_width="72dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/profilepic" />
+
+    <TextView
+        android:id="@+id/profileNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilePicImageView"
+        android:layout_centerHorizontal="true"
+        android:text="Dr Kamran"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"/>
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/profileNameTextView"
+        android:layout_marginTop="5dp">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/completeProfileButton"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/progressLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#CEEDF1"
+        android:text="Complete Your Profile"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/completeProfileButton"
+        android:layout_marginTop="7dp"
+        android:background="#000000"/>
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="520dp"
+        android:layout_below="@id/completeProfileButton"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/home"
+                android:text="Home"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/appointmentsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/appointment"
+                android:text="Appointments"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/myProfileButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/profile"
+                android:text="My Profile"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/walletButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/wallet"
+                android:text="Wallet"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/viewHospitalsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/hospital"
+                android:text="View Hospitals"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/settingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/setting"
+                android:text="Settings"
+                android:textAlignment="viewStart"
+
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/doctorButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/doctor"
+                android:text="Are you a Doctor?"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/contactUsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/call"
+                android:text="Contact Us"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/healthNewsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/news"
+                android:text="Health News"
+
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/logout"
+                android:text="Log Out"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/homeBottomButton"
+            android:layout_width="63dp"
+            android:layout_height="83dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="home"
+            android:src="@drawable/homeorange"
+        />
+
+        <ImageButton
+            android:id="@+id/appointmentBottomButton"
+            android:layout_width="78dp"
+            android:layout_height="83dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="appointment"
+            android:src="@drawable/appointment"
+               />
+
+        <ImageButton
+            android:id="@+id/callButton"
+            android:layout_width="56dp"
+            android:layout_height="76dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="call"
+            android:src="@drawable/call" />
+
+        <ImageButton
+            android:id="@+id/medicalRecordsBottomButton"
+            android:layout_width="66dp"
+            android:layout_height="83dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="news"
+            android:src="@drawable/records" />
+
+        <ImageButton
+            android:id="@+id/profileBottomButton"
+            android:layout_width="78dp"
+            android:layout_height="83dp"
+            android:contentDescription="profile"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/profile"
+             />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

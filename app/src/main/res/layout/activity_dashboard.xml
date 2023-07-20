@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="346dp"
+        android:layout_height="58dp"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/navButton"
+            android:layout_width="58dp"
+            android:layout_height="54dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/nav"
+            android:text="navigation" />
+
+        <ImageView
+
+            android:layout_width="147dp"
+            android:layout_height="79dp"
+            android:layout_marginLeft="59dp"
+            android:src="@drawable/medo" />
+
+        <ImageView
+            android:id="@+id/navbell"
+            android:layout_width="85dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48dp"
+            android:background="@color/white"
+            android:padding="1dp"
+            android:src="@drawable/bell" />
+
+        <ImageView
+            android:id="@+id/navwallet"
+            android:layout_width="39dp"
+            android:layout_height="56dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@color/white"
+            android:padding="1dp"
+            android:src="@drawable/walletorange" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="349dp"
+        android:layout_height="46dp"
+        android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/profilepic"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/profilepic"
+            android:text="navigation" />
+
+        <TextView
+            android:id="@+id/profileNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="3dp"
+            android:text="Hello Guest"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pTextView"
+            android:layout_width="79dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="20dp"
+
+            android:text=" Patient"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="75dp"
+            android:background="@color/white"
+            android:padding="1dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/jTextView"
+            android:layout_width="79dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:text=" Pakistan"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search By Hospital">
+
+        </SearchView>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#C6EAFE"
+                android:scaleType="centerCrop"
+                android:src="@drawable/d" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FF9885"
+                android:src="@drawable/consult" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FEF5DE"
+                android:src="@drawable/m" />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <Button
+            android:id="@+id/d"
+            android:layout_width="114dp"
+            android:layout_height="59dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#FCFEFF"
+            android:gravity="center"
+            android:text="Doctor's Appointment"
+            android:textColor="#206F91"
+            android:textSize="40px" />
+
+        <Button
+            android:id="@+id/c"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#FBFBFB"
+            android:gravity="center"
+            android:text="Consult Online"
+            android:textColor="#206F91" />
+
+        <Button
+            android:id="@+id/m"
+            android:layout_width="112dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FBFBFB"
+            android:gravity="center"
+            android:text="Medical Record"
+            android:textColor="#206F91" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="#C6EAFE"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pr"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="Are You a Doctor?"
+            android:textColor="#206F91"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:background="#C6EAFE">
+
+            <Button
+                android:id="@+id/nurse"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#206F91"
+                android:gravity="center"
+                android:text="Click here..."
+                android:textColor="#FFFFFF" />
+
+
+            <ImageView
+                android:id="@+id/dimg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="105dp"
+                android:background="#C5E9FD"
+                android:padding="1dp"
+                android:src="@drawable/nurse" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#FEF5DE"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sale"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+
+            android:text="Order Medicines"
+            android:textColor="#206F91"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="71dp"
+        android:background="#FEF5DE">
+
+        <Button
+            android:id="@+id/medicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/discount"
+            android:gravity="center"
+            android:text="Upto 40% off"
+
+            android:textColor="#206F91" />
+
+
+        <ImageView
+            android:id="@+id/nurseimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:background="#FEF5DE"
+            android:padding="1dp"
+            android:src="@drawable/view" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="#FECCC9"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sales"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+
+            android:text="Order Medicines"
+            android:textColor="#206F91"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#FECFCD">
+
+        <Button
+            android:id="@+id/medicin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/discount"
+            android:gravity="center"
+            android:text="Upto 40% off"
+            android:textColor="#206F91" />
+
+
+        <ImageView
+            android:id="@+id/nurs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="65dp"
+            android:background="#FED2D0"
+            android:padding="1dp"
+            android:src="@drawable/dc" />
+
+    </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="19dp">
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@null"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>
+
+
+
